@@ -1,5 +1,9 @@
 -- White Rabbit: green console text inside a cyan HUD frame.
 --
+-- Reference config: Omarchy does not load hyprland.lua from a git-cloned
+-- theme. The installer in github.com/cycclon/omarchy-white-rabbit-extras
+-- installs it, together with the hud-borders plugin and cursors it sets up.
+--
 -- rounding_power controls the superellipse exponent used for corners:
 -- 2.0 is a circular arc, >2 is a squircle, and 1.0 collapses the curve into
 -- a straight 45-degree line -- a true chamfer. That is what gives the frame
@@ -215,8 +219,8 @@ hl.config({
   },
 })
 
--- Cursors. XCURSOR_THEME picks the White Rabbit pointer set that install.sh
--- copies to ~/.local/share/icons/WhiteRabbit (without it installed, apps fall
+-- Cursors. XCURSOR_THEME picks the White Rabbit pointer set that the extras
+-- installer copies to ~/.local/share/icons/WhiteRabbit (without it installed, apps fall
 -- back to your usual cursor). no_hardware_cursors draws the pointer in
 -- software so it passes through the glow screen shader like everything
 -- else, instead of floating on a hardware plane above it; set it back to 2
