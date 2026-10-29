@@ -22,7 +22,8 @@ a separate repository. This one is only the theme, and it works on its own.
 - **Shell chrome** (`shell.*.toml`) — bar, menu, launcher, lock screen,
   notifications, popups, tooltips and controls, all from the same palette.
 - **GTK styling** (`gtk.css`, `gtk4.css`) and the Yaru icon theme
-  (`icons.theme`).
+  (`icons.theme`). GTK 4 context menus get the HUD frame: chamfered cyan
+  outline, green text, and a 75% fill that Hyprland frosts.
 - **Four backgrounds** (`backgrounds/`) — two digital-rain renders, a dense
   "code wall," and the Arch Linux logo formed out of the rain, sized for
   2560×1440 and up.

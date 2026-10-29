@@ -460,6 +460,43 @@ menubutton popover {
   background-color: @matrix_bg;
 }
 
+/* Context and dropdown menus wear the HUD frame, matching Zen's menus
+ * (userChrome.css): one 64x64 SVG as a 9-slice border image with 22px
+ * corners -- 45-degree cuts top-left and bottom-right, a square top-right,
+ * a small step low on the left and a thick accent on the top-left cut. The
+ * fill is 75% opaque; Hyprland's decoration:blur:popups frosts what shows
+ * through. The image draws over the padding, so there is no CSS border. */
+popover.menu {
+  box-shadow: none;
+}
+
+popover.menu > contents {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 8px 8px 10px 6px;
+  border-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCcgdmlld0JveD0nMCAwIDY0IDY0Jz48cGF0aCBkPSdNMTQuNzUsMC43NSBINjMuMjUgVjQ5LjI1IEw0OS4yNSw2My4yNSBIMy43NSBWNTIgTDAuNzUsNDkgVjE0Ljc1IFonIGZpbGw9JyMwMjBkMDYnIGZpbGwtb3BhY2l0eT0nMC43NScgc3Ryb2tlPScjNDVhYmJmJyBzdHJva2Utd2lkdGg9JzEuNScvPjxwYXRoIGQ9J00zLjUsMTMgTDEzLDMuNScgc3Ryb2tlPScjNDVhYmJmJyBzdHJva2Utd2lkdGg9JzIuNicvPjwvc3ZnPg==") 22 fill / 22px stretch;
+}
+
+popover.menu modelbutton {
+  color: @matrix_fg;
+}
+
+popover.menu modelbutton:disabled {
+  color: @matrix_fg_dim;
+}
+
+popover.menu modelbutton:hover,
+popover.menu modelbutton:focus,
+popover.menu modelbutton:selected {
+  background-color: RGB(41 204 82 / 14%);
+  color: @matrix_fg_bright;
+}
+
+popover.menu separator {
+  background-color: RGB(69 171 191 / 35%);
+}
+
 /* -- checkboxes, radios, switches ------------------------------------------- */
 
 checkbutton,
