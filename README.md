@@ -27,9 +27,9 @@ a separate repository. This one is only the theme, and it works on its own.
 - **Four backgrounds** (`backgrounds/`) — two digital-rain renders, a dense
   "code wall," and the Arch Linux logo formed out of the rain, sized for
   2560×1440 and up.
-- **Reference configs** — `hyprland.lua.example` and `foot.ini.example`.
-  Omarchy doesn't load these from a git-cloned theme; they document the full
-  setup, and the extras installer puts them in place.
+- **Reference terminal config** — `foot.ini.example`. Omarchy doesn't load
+  it from a git-cloned theme; the extras installer puts it in place, along
+  with the theme's Hyprland config, which lives in the extras repo.
 
 ## Install
 
@@ -43,7 +43,7 @@ with Omarchy's standard window borders.
 For the full look in the screenshots, install
 [White Rabbit extras](https://github.com/cycclon/omarchy-white-rabbit-extras)
 instead: its installer sets up this theme too, together with the Hyprland
-config above, the window frames, the overlays, the screensaver, the menu and
+config, the window frames, the overlays, the screensaver, the menu and
 the cursors. It runs code on your machine, so read its README first.
 
 ### Requirements

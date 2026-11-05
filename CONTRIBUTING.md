@@ -19,9 +19,10 @@ repo is the one thing that goes through review.
 ## What belongs here
 
 Only theme files: the palette, backgrounds, previews, the app theme files
-Omarchy reads, and the `.example` reference configs. Nothing that runs --
-no scripts, plugins or build tools -- so the theme can be listed in
-Omarchy's gallery. The plugins, window frames, cursors and installer live in
+Omarchy reads, and `foot.ini.example`. No code of any kind -- no scripts,
+plugins, build tools or Lua config -- so the theme can be listed in
+Omarchy's gallery. The Hyprland config, plugins, window frames, cursors and
+installer live in
 [White Rabbit extras](https://github.com/cycclon/omarchy-white-rabbit-extras);
 send changes to those there.
 
@@ -31,5 +32,3 @@ send changes to those there.
   after makes a color or background change easy to judge.
 - **Keep backgrounds light.** WebP, sized for 2560×1440 and up, re-encoded
   with `magick input.png -strip -resize '3840>' -quality 82 output.webp`.
-- **Keep `hyprland.lua.example` in step with the extras.** Its plugin and
-  cursor settings document what the extras installer sets up.
